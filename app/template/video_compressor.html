@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="background-color: #87CEEB; padding: 20px; border-radius: 10px;">
+    <h2 style="color: white;">Video Compressor</h2>
+    <p style="color: white;">Kompres dan tingkatkan kualitas video Anda. Unggah video dan biarkan AI kami melakukan sisanya.</p>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*" required style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        <button type="submit" style="padding: 10px 20px; background-color: white; color: #87CEEB; border: none; border-radius: 5px; cursor: pointer;">Compress</button>
+    </form>
+</div>
+{% endblock %}

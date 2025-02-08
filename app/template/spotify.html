@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="background-color: #1DB954; padding: 20px; border-radius: 10px;">
+    <h2 style="color: white;">Spotify Downloader</h2>
+    <p style="color: white;">Mendownload Music Spotify. Masukkan link Spotify di bawah ini</p>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Masukkan link Spotify" required style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        <button type="submit" style="padding: 10px 20px; background-color: white; color: #1DB954; border: none; border-radius: 5px; cursor: pointer;">Download</button>
+    </form>
+</div>
+{% endblock %}  

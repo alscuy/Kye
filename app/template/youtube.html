@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="background-color: #FF0000; padding: 20px; border-radius: 10px;">
+    <h2 style="color: white;">YouTube Downloader</h2>
+    <p style="color: white;">Unduh video dari YouTube dengan kualitas yang diinginkan dan tingkatkan kualitasnya menggunakan AI.</p>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Masukkan link YouTube" required style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        <select name="quality" required style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc; margin-top: 10px;">
+            <option value="360p">360p</option>
+            <option value="480p">480p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+        </select>
+        <button type="submit" style="padding: 10px 20px; background-color: white; color: #FF0000; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Download</button>
+    </form>
+</div>
+{% endblock %}
